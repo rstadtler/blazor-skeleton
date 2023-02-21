@@ -1,10 +1,25 @@
 ﻿@page "/todo" 
-<PageTitle>
-My To do list. 
-</PageTitle>
-<h1>TODO</h1>
+
+<pagetitle>
+    My to do list    
+</pagetitle>
+
+<h3>To do</h3>
 <p>This is a list of my to do items.</p>
 
-@code {
+<ul>
+    @foreach var todo in todoList){
+        <li>@todo.Item</li>
+    }
+</ul>
 
+<input placeholder = "Add Task" @bind = "newTodo"/><!--bind placeholder to variable newTodo-->
+<button @onclick="Add">Add</button>
+
+@code {
+    private List<TodoItem> todoList = new();
+        private string? newTodo;
+        private void Add(){
+
+        }
 }

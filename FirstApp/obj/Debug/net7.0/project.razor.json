@@ -8,138 +8,6 @@
   "ProjectWorkspaceState": {
     "TagHelpers": [
       {
-        "HashCode": 543486630,
-        "Kind": "Components.Component",
-        "Name": "FirstApp.Pages.FetchData",
-        "AssemblyName": "FirstApp",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "FetchData"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "FirstApp.Pages.FetchData"
-        }
-      },
-      {
-        "HashCode": 542124537,
-        "Kind": "Components.Component",
-        "Name": "FirstApp.Pages.FetchData",
-        "AssemblyName": "FirstApp",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "FirstApp.Pages.FetchData"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "FirstApp.Pages.FetchData",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -1577172338,
-        "Kind": "Components.Component",
-        "Name": "FirstApp.Pages.Index",
-        "AssemblyName": "FirstApp",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Index"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "FirstApp.Pages.Index"
-        }
-      },
-      {
-        "HashCode": 2096022633,
-        "Kind": "Components.Component",
-        "Name": "FirstApp.Pages.Index",
-        "AssemblyName": "FirstApp",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "FirstApp.Pages.Index"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "FirstApp.Pages.Index",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -1207402131,
-        "Kind": "Components.Component",
-        "Name": "FirstApp.Pages.Counter",
-        "AssemblyName": "FirstApp",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Counter"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "FirstApp.Pages.Counter"
-        }
-      },
-      {
-        "HashCode": -405657169,
-        "Kind": "Components.Component",
-        "Name": "FirstApp.Pages.Counter",
-        "AssemblyName": "FirstApp",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "FirstApp.Pages.Counter"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "FirstApp.Pages.Counter",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -1015444157,
-        "Kind": "Components.Component",
-        "Name": "FirstApp.Pages.TODO",
-        "AssemblyName": "FirstApp",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "TODO"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "FirstApp.Pages.TODO"
-        }
-      },
-      {
-        "HashCode": -1200316862,
-        "Kind": "Components.Component",
-        "Name": "FirstApp.Pages.TODO",
-        "AssemblyName": "FirstApp",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "FirstApp.Pages.TODO"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "FirstApp.Pages.TODO",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
         "HashCode": 377924680,
         "Kind": "Components.Component",
         "Name": "FirstApp.Shared.SurveyPrompt",
@@ -351,6 +219,105 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "FirstApp.App",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -1207402131,
+        "Kind": "Components.Component",
+        "Name": "FirstApp.Pages.Counter",
+        "AssemblyName": "FirstApp",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Counter"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "FirstApp.Pages.Counter"
+        }
+      },
+      {
+        "HashCode": -405657169,
+        "Kind": "Components.Component",
+        "Name": "FirstApp.Pages.Counter",
+        "AssemblyName": "FirstApp",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "FirstApp.Pages.Counter"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "FirstApp.Pages.Counter",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -1577172338,
+        "Kind": "Components.Component",
+        "Name": "FirstApp.Pages.Index",
+        "AssemblyName": "FirstApp",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Index"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "FirstApp.Pages.Index"
+        }
+      },
+      {
+        "HashCode": 2096022633,
+        "Kind": "Components.Component",
+        "Name": "FirstApp.Pages.Index",
+        "AssemblyName": "FirstApp",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "FirstApp.Pages.Index"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "FirstApp.Pages.Index",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 543486630,
+        "Kind": "Components.Component",
+        "Name": "FirstApp.Pages.FetchData",
+        "AssemblyName": "FirstApp",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "FetchData"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "FirstApp.Pages.FetchData"
+        }
+      },
+      {
+        "HashCode": 542124537,
+        "Kind": "Components.Component",
+        "Name": "FirstApp.Pages.FetchData",
+        "AssemblyName": "FirstApp",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "FirstApp.Pages.FetchData"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "FirstApp.Pages.FetchData",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
