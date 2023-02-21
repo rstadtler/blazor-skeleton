@@ -4,8 +4,10 @@
     My to do list    
 </pagetitle>
 
-<h3>To do</h3>
-<p>This is a list of my to do items.</p>
+<h1>To do</h1>
+<h3>This is a list of my to do items.</h3>
+<p>You currently have @todoList.Count(todo=> !todo.Done) items left to do.</p>
+<p>You have finished @todoList.Count(todo=> todo.Done) items done.</p>
 
 <ul>
     @foreach (var todo in todoList){
