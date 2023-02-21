@@ -13,12 +13,14 @@
     }
 </ul>
 
-<input placeholder = "Add Task" @bind = "newTodo"/><!--bind placeholder to variable newTodo-->
+<input placeholder = "Add Task" @bind = "newTodo"/><!--bind method to variable newTodo-->
 <button @onclick="Add">Add</button>
 
 @code {
     private List<TodoItem> todoList = new();
         private string? newTodo;
+
+        <!--Custom method for button Add-->
         private void Add(){
             if(!string.IsNullOrWhiteSpace(newTodo)){
                 todoList.Add(new TodoItem {Item = newTodo});
