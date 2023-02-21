@@ -8,7 +8,7 @@
 <p>This is a list of my to do items.</p>
 
 <ul>
-    @foreach var todo in todoList){
+    @foreach (var todo in todoList){
         <li>@todo.Item</li>
     }
 </ul>
@@ -20,6 +20,9 @@
     private List<TodoItem> todoList = new();
         private string? newTodo;
         private void Add(){
-
+            if(!string.IsNullOrWhiteSpace(newTodo)){
+                todoList.Add(new TodoItem {Item = newTodo});
+                newTodo = string.Empty;
+            }
         }
 }
