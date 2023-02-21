@@ -9,7 +9,10 @@
 
 <ul>
     @foreach (var todo in todoList){
-        <li>@todo.Item</li>
+        <li>
+            <input type="checkbox" @bind="todo.Done"/>
+            @todo.Item
+        </li>
     }
 </ul>
 
