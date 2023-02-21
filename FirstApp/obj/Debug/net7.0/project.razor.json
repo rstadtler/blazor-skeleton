@@ -74,39 +74,6 @@
         }
       },
       {
-        "HashCode": -1015444157,
-        "Kind": "Components.Component",
-        "Name": "FirstApp.Pages.TODO",
-        "AssemblyName": "FirstApp",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "TODO"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "FirstApp.Pages.TODO"
-        }
-      },
-      {
-        "HashCode": -1200316862,
-        "Kind": "Components.Component",
-        "Name": "FirstApp.Pages.TODO",
-        "AssemblyName": "FirstApp",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "FirstApp.Pages.TODO"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "FirstApp.Pages.TODO",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
         "HashCode": -1207402131,
         "Kind": "Components.Component",
         "Name": "FirstApp.Pages.Counter",
@@ -136,6 +103,39 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "FirstApp.Pages.Counter",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -1015444157,
+        "Kind": "Components.Component",
+        "Name": "FirstApp.Pages.TODO",
+        "AssemblyName": "FirstApp",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "TODO"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "FirstApp.Pages.TODO"
+        }
+      },
+      {
+        "HashCode": -1200316862,
+        "Kind": "Components.Component",
+        "Name": "FirstApp.Pages.TODO",
+        "AssemblyName": "FirstApp",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "FirstApp.Pages.TODO"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "FirstApp.Pages.TODO",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
