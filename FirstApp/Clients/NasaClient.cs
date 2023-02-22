@@ -1,7 +1,7 @@
 using System.Net.Http.Json;
 using FirstApp.Models;
 
-namespace FirstApp.Clients{
+namespace FirstApp.Clients;
     public class NasaClient{
 
         private readonly HttpClient _client;
@@ -13,4 +13,3 @@ namespace FirstApp.Clients{
             return await _client.getFromJsonAsync<NasaResponse>("https://api.nasa.gov/planetary/apod?api_key=IZ2T38wTGwOcpdfVyVOwu5allViUb5bvQ5DZEhOb");
         }
     }
-}
