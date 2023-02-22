@@ -22,7 +22,7 @@
 </ul>
 
 <!--Delete Later-->
-<p>@basaResponse</p>
+<p>@nasaResponse</p>
 
 <input placeholder = "Add Task" @bind = "newTodo"/><!--bind method to variable newTodo-->
 <button @onclick="Add">Add</button>
@@ -40,8 +40,8 @@
     }
 
     private NasaResponse? nasaResponse = null;
-    protected override async Task OnInitializedAsync();{
-        nasaResponse = await NasaCient.getNasa();
+    protected override async Task OnInitializedAsync(){
+        nasaResponse = await NasaCient.GetNasa();
     }
 
 }
