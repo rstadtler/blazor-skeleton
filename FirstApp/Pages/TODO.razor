@@ -1,7 +1,5 @@
 ﻿@using FirstApp.Models;
 @page "/todo" 
-@using FirstApp.Clients;
-@inject NasaClient NasaClient;
 
 <pagetitle>
     My to do list    
@@ -22,7 +20,6 @@
 </ul>
 
 <!--Delete Later-->
-<p>@nasaResponse</p>
 
 <input placeholder = "Add Task" @bind = "newTodo"/><!--bind method to variable newTodo-->
 <button @onclick="Add">Add</button>
@@ -38,10 +35,4 @@
             newTodo = string.Empty;
         }
     }
-
-    private NasaResponse? nasaResponse = null;
-    protected override async Task OnInitializedAsync(){
-        nasaResponse = await NasaClient.GetNasa();
-    }
-
 }
