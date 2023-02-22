@@ -10,7 +10,7 @@
 
 <p >Enter date for NasaApod record:</p>
 <input placeholder = "Check Date" @bind = "newDate"/> <!--bind method to variable newTodo-->
-<button @onclick="Add">Add</button>
+<button @onclick="Check">Check</button>
 
 <Header title="@nasaResponse.title" subTitle="@nasaResponse.date" description="@nasaResponse.explanation" />
 <br>
@@ -26,7 +26,7 @@
     private string? newDate;
 
         <!--Custom method for button Add-->
-    private void Add(){
+    private void Check(){
         if(!string.IsNullOrWhiteSpace(newDate)){
             todoList.Add(new TodoItem {Item = newDate});
             newDate = string.Empty;
