@@ -11,7 +11,7 @@
 <p >Enter date for NasaApod record:</p>
 <input placeholder = "Check Date" @bind = "newDate"/> <!--bind method to variable newDate-->
 <button @onclick="Check">Check</button>
-<CheckDate imgUrl="@nasaResponse.url" />
+<CheckDate imgUrl="@nasaResponse2.url" />
 
 <Header title="@nasaResponse.title" subTitle="@nasaResponse.date" description="@nasaResponse.explanation" />
 <br>
@@ -20,13 +20,14 @@
 
 @code {
     private NasaResponse? nasaResponse = null;
+    private NasaResponse? nasaResponse2 = null;
     protected override async Task OnInitializedAsync(){
         nasaResponse = await NasaClient.GetNasa();
     }
     private string? newDate;
     private async void Check(){
             if(!string.IsNullOrWhiteSpace(newDate)){
-                nasaResponse = await NasaClient.GetDate("2022-12-12");
+                nasaResponse2 = await NasaClient.GetDate("2022-12-12");
                 newDate = string.Empty;
         }        
     }
