@@ -40,6 +40,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVE9ETy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
+[/workspace/blazor-skeleton/FirstApp/Shared/Components/Header.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL0NvbXBvbmVudHMvSGVhZGVyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [/workspace/blazor-skeleton/FirstApp/Shared/SurveyPrompt.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL1N1cnZleVByb21wdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
