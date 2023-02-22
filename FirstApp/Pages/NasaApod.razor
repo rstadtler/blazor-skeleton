@@ -24,10 +24,7 @@
         nasaResponse = await NasaClient.GetNasa();
     }
     private string? newDate;
-
-        <!--Custom method for button Add-->
-    }
-    private void Check(){
+    private async void Check(){
             if(!string.IsNullOrWhiteSpace(newDate)){
                 nasaResponse = await NasaClient.GetDate(newDate);
                 newDate = string.Empty;
