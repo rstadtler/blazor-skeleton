@@ -41,7 +41,7 @@
 
     private NasaResponse? nasaResponse = null;
     protected override async Task OnInitializedAsync(){
-        nasaResponse = await NasaCient.GetNasa();
+        nasaResponse = await NasaClient.GetNasa();
     }
 
 }
