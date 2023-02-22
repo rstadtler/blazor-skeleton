@@ -12,7 +12,7 @@ namespace FirstApp.Clients;
         public async Task<NasaResponse> GetNasa(){
             return await _client.GetFromJsonAsync<NasaResponse>("https://api.nasa.gov/planetary/apod?api_key=IZ2T38wTGwOcpdfVyVOwu5allViUb5bvQ5DZEhOb");
         }
-        public async Task<NasaResponse> GetDate(DateTime newDate ){
+        public async Task<NasaResponse> GetDate(string newDate ){
             return await _client.GetFromJsonAsync<NasaResponse>("https://api.nasa.gov/planetary/apod?date=newDate");
         }
     }

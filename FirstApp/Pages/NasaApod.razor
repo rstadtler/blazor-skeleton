@@ -11,6 +11,7 @@
 <p >Enter date for NasaApod record:</p>
 <input placeholder = "Check Date" @bind = "newDate"/> <!--bind method to variable newTodo-->
 <button @onclick="Check">Check</button>
+<NasaImageSection imgUrl="@nasaResponse.url" />
 
 <Header title="@nasaResponse.title" subTitle="@nasaResponse.date" description="@nasaResponse.explanation" />
 <br>
@@ -22,13 +23,12 @@
     protected override async Task OnInitializedAsync(){
         nasaResponse = await NasaClient.GetNasa();
     }
-    private List<TodoItem> todoList = new();
     private string? newDate;
 
         <!--Custom method for button Add-->
     private void Check(){
         if(!string.IsNullOrWhiteSpace(newDate)){
-            todoList.Add(new TodoItem {Item = newDate});
+            nasaResponse = NasaClient.GetDate(newDate);
             newDate = string.Empty;
         }
     }
