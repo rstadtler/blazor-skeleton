@@ -1,4 +1,7 @@
-﻿@page "/todo" 
+﻿@using FirstApp.Models;
+@page "/todo" 
+@using FirstApp.Clients;
+@inject NasaClient NasaClient;
 
 <pagetitle>
     My to do list    
@@ -18,18 +21,27 @@
     }
 </ul>
 
+<!--Delete Later-->
+<p>@basaResponse</p>
+
 <input placeholder = "Add Task" @bind = "newTodo"/><!--bind method to variable newTodo-->
 <button @onclick="Add">Add</button>
 
 @code {
     private List<TodoItem> todoList = new();
-        private string? newTodo;
+    private string? newTodo;
 
         <!--Custom method for button Add-->
-        private void Add(){
-            if(!string.IsNullOrWhiteSpace(newTodo)){
-                todoList.Add(new TodoItem {Item = newTodo});
-                newTodo = string.Empty;
-            }
+    private void Add(){
+        if(!string.IsNullOrWhiteSpace(newTodo)){
+            todoList.Add(new TodoItem {Item = newTodo});
+            newTodo = string.Empty;
         }
+    }
+
+    private NasaResponse? nasaResponse = null;
+    protected override async Task OnInitializedAsync();{
+        nasaResponse = await NasaCient.getNasa();
+    }
+
 }
