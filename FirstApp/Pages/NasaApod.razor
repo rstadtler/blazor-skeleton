@@ -10,7 +10,7 @@
 
 <p >Enter date for NasaApod record:</p>
 <input placeholder = "Check Date" @bind = "newDate"/> 
-<button @onclick="OnInitializedAsync">Check</button> 
+<button @onclick="Check">Check</button> 
 
 <Header title="@nasaResponse.title" subTitle="@nasaResponse.date" description="@nasaResponse.explanation" />
 <br>
@@ -19,11 +19,14 @@
 
 @code {
     private NasaResponse? nasaResponse = null;
-    private string newDate="2022-12-12";
+    private string? newDate;
     protected override async Task OnInitializedAsync(){
-        nasaResponse = await NasaClient.GetNasa(newDate);
+        nasaResponse = await NasaClient.GetNasa();
     }
-        private void Check(){
-        }
+    private async Task Check(){
+          if(!string.IsNullOrWhiteSpace(newDate)){
+            nasaResponse = await NasaClient.NasaRecord(newDate);
+            newDate = string.Empty;
+        }  
     }
 }
