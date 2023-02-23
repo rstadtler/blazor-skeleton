@@ -1,0 +1,32 @@
+﻿@using FirstApp.Models;
+@page "/nasa-apod" 
+@using FirstApp.Clients;
+@inject NasaClient NasaClient;
+@using FirstApp.Shared.Components;
+
+<pagetitle>
+    Nasa Apod
+</pagetitle>
+
+<p >Enter date for NasaApod record:</p>
+<input placeholder = "Check Date" @bind = "newDate"/> 
+<button @onclick="Check">Check</button> 
+
+<Header title="@nasaResponse.title" subTitle="@nasaResponse.date" description="@nasaResponse.explanation" />
+<br>
+<NasaImageSection imgUrl="@nasaResponse.url" hdUrl = "@nasaResponse.hdurl" copyright="@nasaResponse.copyright" />
+
+
+@code {
+    private NasaResponse? nasaResponse = null;
+    private string? newDate;
+    protected override async Task OnInitializedAsync(){
+        nasaResponse = await NasaClient.GetNasa();
+    }
+    private async Task Check(){
+          if(!string.IsNullOrWhiteSpace(newDate)){
+            nasaResponse = await NasaClient.NasaRecord(newDate);
+            newDate = string.Empty;
+        }  
+    }
+}

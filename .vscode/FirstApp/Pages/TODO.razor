@@ -1,0 +1,36 @@
+﻿@using FirstApp.Models;
+@page "/todo" 
+
+<pagetitle>
+    My to do list    
+</pagetitle>
+
+<h1>To do</h1>
+<h3>This is a list of my to do items.</h3>
+<p>You currently have @todoList.Count(todo=> !todo.Done) items left to do.</p>
+<p>You have finished @todoList.Count(todo=> todo.Done) items done.</p>
+
+<ul>
+    @foreach (var todo in todoList){
+        <li>
+            <input type="checkbox" @bind="todo.Done"/>
+            @todo.Item
+        </li>
+    }
+</ul>
+
+<input placeholder = "Add Task" @bind = "newTodo"/><!--bind method to variable newTodo-->
+<button @onclick="Add">Add</button>
+
+@code {
+    private List<TodoItem> todoList = new();
+    private string? newTodo;
+
+        <!--Custom method for button Add-->
+    private void Add(){
+        if(!string.IsNullOrWhiteSpace(newTodo)){
+            todoList.Add(new TodoItem {Item = newTodo});
+            newTodo = string.Empty;
+        }
+    }
+}
