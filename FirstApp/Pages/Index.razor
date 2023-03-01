@@ -1,5 +1,6 @@
 ﻿@page "/"
 @attribute [AllowAnonymous]
+@inject CustomAuthenticationStateProvider _authenticationStateProvider
 
 <PageTitle>Index</PageTitle>
 
@@ -8,3 +9,14 @@
 Welcome to your new app.
 
 <SurveyPrompt Title="How is Blazor working for you?" />
+<button class="btn-btn-primary" @onclick="RegularUserClicked">Regular User Login</button>
+<button class="btn-btn-secondary" @onclick="AdminUserClicked">Regular User Login</button>
+
+@code{
+    private void RegularUserClicked(){
+        _authenticationStateProvider.RegularFakedSignIn();
+    }
+    private void RegularUserClicked(){
+        _authenticationStateProvider.AdminFakedSignIn();
+    }
+}
