@@ -6,7 +6,7 @@ public class CustomAuthenticationStateProvider: AuthenticationStateProvider{
     {
         return await Task.FromResult(new AuthenticationState(AnonymousUser));
     }
-    private ClaimsPrincipal AnonymousUser => new(new ClaimsIdentity(Array.Empty<Claim>()));
+    private ClaimsPrincipal AnonymousUser => new(new ClaimsIdentity(Array.Empty<Claim>(), "empty"));
 
     private ClaimsPrincipal RegularFakedUser
     {
