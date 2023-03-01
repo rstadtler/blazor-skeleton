@@ -41,7 +41,7 @@ public class CustomAuthenticationStateProvider: AuthenticationStateProvider{
     }
     public void AdminFakedSignIn()
     {
-      var result = Task.FromResult(new AuthenticationState(RegularFakedUser));  
+      var result = Task.FromResult(new AuthenticationState(AdminFakedUser));  
       NotifyAuthenticationStateChanged(result);
     } 
     public void SignOut()
