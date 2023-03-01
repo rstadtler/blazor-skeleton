@@ -36,6 +36,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTmFzYUFwb2QucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[/workspace/blazor-skeleton/FirstApp/Pages/RedirectToLogin.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUmVkaXJlY3RUb0xvZ2luLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [/workspace/blazor-skeleton/FirstApp/Pages/TODO.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVE9ETy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
